@@ -7,41 +7,6 @@
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Mansalva|Merriweather|Sacramento&display=swap" rel="stylesheet">
 
-    <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
-<script>
-    function launchApplication(jnlpfile) {
-        dtjava.launch(            {
-                url : 'GUISnake.jnlp'
-            },
-            {
-                javafx : '8.0+'
-            },
-            {}
-        );
-        return false;
-    }
-</script>
-
-<script>
-    function javafxEmbedGUISnake_id() {
-        dtjava.embed(
-            {
-                id : 'GUISnake_id',
-                url : 'GUISnake.jnlp',
-                placeholder : 'javafx-app-placeholder',
-                width : '600',
-                height : '400'
-            },
-            {
-                javafx : '8.0+'
-            },
-            {}
-        );
-    }
-    <!-- Embed FX application into web page once page is loaded -->
-    dtjava.addOnloadCallback(javafxEmbedGUISnake_id);
-</script>
-
     </head>
 
   <body>
@@ -73,17 +38,18 @@
             <table class =  "snake-table" cellspacing = "20">
               <tr>
                 <td>
-                  <img class="snake-pic" src="image/snake-play.png">
+                  <img class="project-pic" src="image/snake-play.png">
+
+                  <a  class ="project-pic" href="https://github.com/NguyetAnhLe/SnakeGame">Click to download & try</a>
                 </td>
                 <td>
                   <p>
-                    My friend and I use Java to build a GUI from an existing Snake game. Then we add difficulty level to the game such as changing speed and having borders. Then we implement and AI snake based on the code of the snake. The AI grows as the player snake grows. We write code to handle the direction when the snake approaching the borders or corners. Otherwise, the AI snake will be moving randomly. The game was presented in class and played by the professor and 20 classmates.
+                    My friend and I use Java to build a GUI from an existing Snake game. Then we add difficulty level to the game such as changing speed and having borders. Then we implement and AI snake based on the code of the snake. The AI grows as the player's snake grows. We write code to handle the direction when the snake approaching the borders or corners. Otherwise, the AI snake will be moving randomly. The game was presented in class and played by the professor and 20 classmates.
                   </p>
                 </td>
              </tr>
             </table>
-            <b>Webstart:</b> <a href='GUISnake.jnlp' onclick="return launchApplication('GUISnake.jnlp');">click to launch this app as webstart</a><br>
-          
+
 
 
 
