@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="GUISnake.jnlp">
+  <information>
+    <title>SnakeGame</title>
+    <vendor>Moli</vendor>
+    <description>GUISnake</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="GUISnake.jar" size="15008" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="sample.GUISnake"  name="GUISnake" />
+  <update check="background"/>
+</jnlp>

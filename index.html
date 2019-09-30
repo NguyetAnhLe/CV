@@ -5,7 +5,44 @@
     <title>NguyetAnh Le</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Mansalva|Merriweather|Sacramento&display=swap" rel="stylesheet">   </head>
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Merriweather|Sacramento&display=swap" rel="stylesheet">
+
+    <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'GUISnake.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedGUISnake_id() {
+        dtjava.embed(
+            {
+                id : 'GUISnake_id',
+                url : 'GUISnake.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '600',
+                height : '400'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedGUISnake_id);
+</script>
+
+    </head>
 
   <body>
     <div class="top-container">
@@ -26,40 +63,34 @@
       </div>
       <hr>
       <div class="skills">
-        <h2>My Project</h2>
+        <h2 class = "my-project">My Project</h2>
         <div class="skill-row">
-          <img class="" src="" alt="">
           <p>
-            <table cellspacing="20">
-              <thead>
-                <tr>
-                  <th>Project Name</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody>
+            <ul>
+            <li>
+            <h4 class = "snake-project"><strong>The Snake Game</strong> <em>(with AI snake implemented)</em> </h4>
+            </li>
+            <table class =  "snake-table" cellspacing = "20">
               <tr>
-                <td>Java Snake Game</td>
-                <td> Me and my friend built this game for a class project based on already existed snake game. We built its inferface. We added different mode to the game: Border and non-Border. Then we created an AI snake inside the game to make it more diffcult. The AI snake will run on it own and grow perspectively to whatever your length your snake gets. </td>
-              </tr>
-              <tr>
-                <td>After School Program Registratrion</td>
-                <td>Program is written in C++. It reads what program available and fee from a text file, which can be modified by the principle. The users (parents) will register for their children. The program will store student information and what what class they enroll in. Also calculate the amount the school will make.</td>
-              </tr>
-              <tr>
-                <td>Cashier Machine</td>
-                <td> This is a program making coin change making use oh Hash Table. User has option to put what kind of coins are there, then the value and amount paid. The program will calculate the best optimal option.</td>
-              </tr>
-              </tbody>
+                <td>
+                  <img class="snake-pic" src="image/snake-play.png">
+                </td>
+                <td>
+                  <p>
+                    My friend and I use Java to build a GUI from an existing Snake game. Then we add difficulty level to the game such as changing speed and having borders. Then we implement and AI snake based on the code of the snake. The AI grows as the player snake grows. We write code to handle the direction when the snake approaching the borders or corners. Otherwise, the AI snake will be moving randomly. The game was presented in class and played by the professor and 20 classmates.
+                  </p>
+                </td>
+             </tr>
             </table>
-          </p>
+            <b>Webstart:</b> <a href='GUISnake.jnlp' onclick="return launchApplication('GUISnake.jnlp');">click to launch this app as webstart</a><br>
+          
+
+
+
+      </ul>
+        </p>
         </div>
-        <div class="skill-row">
-          <img class="" src="" alt="">
-          <h3>Lorem Ipsum Dolor</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-        </div>
-      </div>
+
       <hr>
       <div class="contact-me">
         <h2>Get In Touch</h2>
@@ -77,5 +108,7 @@
       <p class="copyright">© 2019 NguyetAnh Le @ Umass Boston.</p>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
